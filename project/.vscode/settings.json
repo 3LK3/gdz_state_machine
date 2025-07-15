@@ -1,0 +1,17 @@
+{
+	"godotTools.editorPath.godot4": "f:\\Programs\\Godot_v4.4.1-stable_win64\\Godot_v4.4.1-stable_win64.exe",
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.rulers": [
+		90
+	],
+	"godotFormatterAndLinter.lineLength": 90,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"**/*.uid": true
+	}
+}

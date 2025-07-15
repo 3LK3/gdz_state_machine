@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://dxp5b3wf5fwp3"]
+
+[ext_resource type="Script" uid="uid://bf43k405lj31i" path="res://demo/application_states/main_menu_state.gd" id="1_d6po2"]
+[ext_resource type="Script" uid="uid://dhao2mg1ciid2" path="res://demo/demo.gd" id="1_j5lb4"]
+[ext_resource type="PackedScene" uid="uid://claigll7wnd1g" path="res://demo/application_states/main_menu_canvas.tscn" id="2_dar0o"]
+[ext_resource type="Script" uid="uid://m517grxx37om" path="res://demo/application_states/in_game_state.gd" id="2_ytiva"]
+[ext_resource type="PackedScene" uid="uid://bhxhdn7ir5jns" path="res://demo/application_states/in_game_scene.tscn" id="5_u10mr"]
+[ext_resource type="Script" uid="uid://cc1vdowdnxlfd" path="res://demo/application_states/settings_menu_state.gd" id="6_onu7k"]
+[ext_resource type="PackedScene" uid="uid://c0wtixwm5g6od" path="res://demo/application_states/settings_menu_canvas.tscn" id="7_s1s6j"]
+
+[node name="Demo" type="Node" node_paths=PackedStringArray("state_machine")]
+script = ExtResource("1_j5lb4")
+state_machine = NodePath("ApplicationStateMachine")
+
+[node name="ApplicationStateMachine" type="StateMachine" parent="." node_paths=PackedStringArray("initial_state")]
+initial_state = NodePath("MainMenuState")
+
+[node name="MainMenuState" type="State" parent="ApplicationStateMachine" node_paths=PackedStringArray("root_node")]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
+script = ExtResource("1_d6po2")
+root_node = NodePath("../..")
+canvas_scene = ExtResource("2_dar0o")
+metadata/_custom_type_script = "uid://bf43k405lj31i"
+
+[node name="InGameState" type="State" parent="ApplicationStateMachine" node_paths=PackedStringArray("root_node")]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
+script = ExtResource("2_ytiva")
+root_node = NodePath("../..")
+in_game_scene = ExtResource("5_u10mr")
+metadata/_custom_type_script = "uid://m517grxx37om"
+
+[node name="SettingsMenuState" type="State" parent="ApplicationStateMachine" node_paths=PackedStringArray("root_node")]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
+script = ExtResource("6_onu7k")
+root_node = NodePath("../..")
+canvas_scene = ExtResource("7_s1s6j")
+metadata/_custom_type_script = "uid://cc1vdowdnxlfd"

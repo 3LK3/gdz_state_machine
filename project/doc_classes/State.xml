@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="State" inherits="Node" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/godotengine/godot/master/doc/class.xsd">
+	<brief_description>
+	</brief_description>
+	<description>
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="_enter_state" qualifiers="virtual">
+			<return type="void" />
+			<param index="0" name="previous_state_name" type="StringName" />
+			<param index="1" name="data" type="Dictionary" />
+			<description>
+			</description>
+		</method>
+		<method name="_exit_state" qualifiers="virtual">
+			<return type="void" />
+			<description>
+			</description>
+		</method>
+		<method name="_handle_input" qualifiers="virtual">
+			<return type="void" />
+			<param index="0" name="event" type="InputEvent" />
+			<description>
+			</description>
+		</method>
+		<method name="_physics_update" qualifiers="virtual">
+			<return type="void" />
+			<param index="0" name="delta" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="_update" qualifiers="virtual">
+			<return type="void" />
+			<param index="0" name="delta" type="float" />
+			<description>
+			</description>
+		</method>
+		<method name="finish">
+			<return type="void" />
+			<param index="0" name="next_state_name" type="StringName" />
+			<param index="1" name="data" type="Dictionary" />
+			<description>
+			</description>
+		</method>
+	</methods>
+	<signals>
+		<signal name="finished">
+			<param index="0" name="next_state_name" type="StringName" />
+			<param index="1" name="data" type="Dictionary" />
+			<description>
+			</description>
+		</signal>
+	</signals>
+</class>

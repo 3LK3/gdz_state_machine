@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4bcc10ce-397d-4793-a634-e6774daa3c54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project Files">
+      <UniqueIdentifier>{eb17fa30-da82-45ad-b5b2-ed119759f7ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore">
+      <Filter>Project Files</Filter>
+    </None>
+    <None Include="LICENSE">
+      <Filter>Project Files</Filter>
+    </None>
+    <None Include="README.md">
+      <Filter>Project Files</Filter>
+    </None>
+    <None Include="SConstruct">
+      <Filter>Project Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\helpers.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\register_types.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\state.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\state_machine.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\helpers.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\register_types.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\state.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\state_machine.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
